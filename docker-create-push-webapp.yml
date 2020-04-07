@@ -9,11 +9,11 @@
       chdir: /opt/docker
 
   - name: Create tag to image
-    command: docker tag docker-webapp-image shirazgit/docker-webapp-image
+    command: docker tag docker-webapp-image sajjashi/docker-webapp-image
 
   - name: Push image on to dockerhub
-    command: docker push shirazgit/docker-webapp-image
+    command: docker push sajjashi/docker-webapp-image
 
   - name: Remove docker images from ansible server
-    command: docker rmi docker-webapp-image:latest shirazgit/docker-webapp-image
+    command: docker rmi docker-webapp-image:latest sajjashi/docker-webapp-image
     ignore_errors: yes
